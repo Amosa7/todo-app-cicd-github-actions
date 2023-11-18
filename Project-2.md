@@ -71,3 +71,20 @@ And BOOM, My todo-app is running successful on production server🎉.
 ![Screenshot (60)](https://github.com/Amosa7/todo-app-cicd-github-actions/assets/136304747/a9ffdb7a-8c3c-4296-ba17-41e8f03faa45)
 
 ![Screenshot (61)](https://github.com/Amosa7/todo-app-cicd-github-actions/assets/136304747/6962f0d2-44e3-43f3-916d-7df25f5a92cf)
+
+### FINAL STEP: CONFIGURING DOCKER CI/CD PIPELINE WITH GITHUB ACTIONS
+
+As we all know, building and testing docker images can be tedious, therefore setting up a CI/CD pipeline for automating this process is necessary to make work easier and fast. I created a github actions to automate the build ad push docker image to Docker hub whenever there is push to the master branch. It include setting up secrets for Docker Hub credentials and using those secrets in my GitHub Actions workflow.
+
+#### content of github actions in .github/workflows/docker-cicd.yaml file 
+![Screenshot (76)](https://github.com/Amosa7/todo-app-cicd-github-actions/assets/136304747/159757aa-4929-4756-b63a-4455953af974)
+
+#### GitHub actions after i pushed the repository to my github
+![Screenshot (75)](https://github.com/Amosa7/todo-app-cicd-github-actions/assets/136304747/abfc30ab-2ae0-483f-876c-d76f55250810)
+
+#### the docker image was successful published on Docker hub 
+![Screenshot (74)](https://github.com/Amosa7/todo-app-cicd-github-actions/assets/136304747/2d4a4b73-0b6e-4a82-a13f-ce7e56b74716)
+
+
+
+
