@@ -1,4 +1,4 @@
-### SIMULATING JENKINS AUTOMATION TO DEPLOY CONTAINERIZED JS WEBAPP USING GITHUB ACTION
+### SIMULATING JENKINS AUTOMATION TO DEPLOY CONTAINERIZED JS TODO-APP USING GITHUB ACTIONS
 
 ### Introduction
 The aim of this project is to demonstrates how to containerized Node.js web application using Docker, push it to repository (in this case nexus repository). And also, to create Docker-compose file, connecting it to MongoDB, and utilizing GitHub Actions to simulate CI/CD pipeline. The application includes a MongoDB database and Mongo Express for easy database management. 
