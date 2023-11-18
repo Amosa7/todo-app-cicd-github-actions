@@ -66,7 +66,7 @@ Mongo-express:
 - This also pulled official Mongo-express image from Docker hub.
 - it provides a web-based user interface for managing MongoDB databases.
 
-And BOOM, My app is running successful on production server🎉.
+And BOOM, My todo-app is running successful on production server🎉.
 
 ![Screenshot (60)](https://github.com/Amosa7/todo-app-cicd-github-actions/assets/136304747/a9ffdb7a-8c3c-4296-ba17-41e8f03faa45)
 
