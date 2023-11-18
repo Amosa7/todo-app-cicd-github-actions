@@ -25,5 +25,10 @@ jobs:
         env:
           DOCKER_BUILDKIT: 1
 
+      - name: Debugging Step
+        run: |
+          echo "DOCKER_REGISTRY_URL: ${{ secrets.DOCKER_REGISTRY_URL }}"
+          echo "DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}"
+
       - name: Logout from Docker Registry
         run: docker logout ${{ secrets.DOCKER_REGISTRY_URL }}
