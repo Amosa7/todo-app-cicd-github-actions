@@ -6,7 +6,7 @@ And finally, the application is deployed on "assumed" production server to ensur
 
 ![84_SuI-Zg](https://github.com/Amosa7/todo-app-cicd-github-actions/assets/136304747/0bb1ae1c-6be8-4cc1-8a28-008da86859a2)
 
-### STEP 1: PREPARING THE WEBAPP PROJECT
+### STEP 1: PREPARING THE TODO-APP PROJECT
 Begin by downloading the source code for the Todo-App from the Kashipara dev community. The frontend of the app has already been developed by the comm., and I built the backend using Node.js to enable server-side functionality. This backend will establish a connection with the MongoDB database.
 
 ![Screenshot (64)](https://github.com/Amosa7/todo-app-cicd-github-actions/assets/136304747/a1a404fc-4ae1-4bb5-86d3-c0a028458a6f)
@@ -26,7 +26,7 @@ I created the docker-compose.yaml file to simultaneous execute MongoDB and Mongo
 
 ![Screenshot (67)](https://github.com/Amosa7/todo-app-cicd-github-actions/assets/136304747/862cc4cd-900f-4e01-8f5f-78fd730971ab)
 
-### STEP4: RUNNING THE APP LOCALLY
+### STEP 4: RUNNING THE APP LOCALLY
 To run the App locally, I initiate the MongoDB and Mongo Express containers by executing the YAML file...Mongo-express is accessible on localhost:8080
 
 ![Screenshot (44)](https://github.com/Amosa7/todo-app-cicd-github-actions/assets/136304747/f428c71c-624c-4c50-b3b5-6cfbdafefbd1)
@@ -40,13 +40,13 @@ To run the App locally, I initiate the MongoDB and Mongo Express containers by e
 ![Screenshot (47)](https://github.com/Amosa7/todo-app-cicd-github-actions/assets/136304747/1bdac846-39f0-4078-9e98-f7d18727f3d6)
 
 
-### STEP: BUILDING AND PUSHING DOCKER IMAGE TO REPOSITORY (NEXUS)
+### STEP 5: BUILDING AND PUSHING DOCKER IMAGE TO REPOSITORY (NEXUS)
 
 Recall, that I have successfully created Dockerfile in previous step, next is that I built the image and tagged it with Nexus Repository details. After that, I created docker-hosted repository on nexus and then logged in into repository and finally, pushed the image to nexus repository.
 
 ![Screenshot (56 1)](https://github.com/Amosa7/todo-app-cicd-github-actions/assets/136304747/ca5d229b-9ae2-41dc-b98a-c151390e0188)
 
-### STEP: DEPLOYING ON "ASSUMED" PROD SERVER
+### STEP 6: DEPLOYING ON "ASSUMED" PROD SERVER
 
 Next is an important step which is the deploying of the the App on assumed production server. I copied docker-compose.yaml and use it on  productions server to initiate or deploy the App, I defined some environmental variables to pull the docker image of the App from Nexus repository, and to run Mongodb and Mongo express containers.
 
@@ -84,6 +84,12 @@ As we all know, building and testing docker images can be tedious, therefore set
 
 #### the docker image was successful published on Docker hub 
 ![Screenshot (74)](https://github.com/Amosa7/todo-app-cicd-github-actions/assets/136304747/2d4a4b73-0b6e-4a82-a13f-ce7e56b74716)
+
+### CONCLUSION
+
+In conclusion, this project aimed to simulate Jenkins automation for deploying a containerized JavaScript Todo-App by using GitHub Actions. This project showcases the efficiency and usefulness of Github Action's CI/CD provided by the GitHub platform. It also demonstrates that automation reduces manual intervention, minimizes errors, and ensures a consistent deployment process. And most importantly, this project serves as a testament to the advancements and importance of DevOps practices software delivery.
+
+
 
 
 
